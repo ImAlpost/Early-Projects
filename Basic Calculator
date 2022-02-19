@@ -1,0 +1,26 @@
+using System;
+
+namespace BasicCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome To The Basic Calculator!");
+            Console.WriteLine("(Note: This Calculator Is Confined To Addition And The 32-Bit Integer Limit [2.147 Billion])");
+            // Prompts User To Input First Number & Establishes Said Number As Variable "Num1"
+            Console.Write("Please Input First Number: ");
+            double Num1 = Convert.ToInt32(Console.ReadLine());
+            // Prompts User To Input Second Number & Establishes Said Number As Variable "Num2"
+            Console.Write("Please Input Second Number: ");
+            double Num2 = Convert.ToInt32(Console.ReadLine());
+            // Prints Answer (Num1 + Num2)
+            Console.WriteLine("The Answer Is " + (Num1 + Num2) + ".");
+            // Closing Statement & Autograph
+            Console.WriteLine("Thank You For Using Me For Your Mathematical Needs!");
+            Console.WriteLine("Code By Dylan Schiavi <3 :)");
+            // Prevents Immediate Termination Of Program Until User Input
+            Console.ReadLine();
+        }
+    }
+}
